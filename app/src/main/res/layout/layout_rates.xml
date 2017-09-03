@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/width_15"
+        android:layout_marginRight="@dimen/width_15"
+        android:layout_marginTop="19dp"
+        android:orientation="horizontal">
+
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 ETH ="
+            android:textSize="@dimen/width_15_sp" />
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0.0987 BTC"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/width_15_sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/l1"
+        android:layout_marginEnd="@dimen/width_15"
+        android:layout_marginRight="@dimen/width_15"
+        android:layout_marginTop="@dimen/width_15"
+        android:orientation="horizontal">
+
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY"
+            android:textSize="@dimen/width_15_sp" />
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10"
+            android:drawableLeft="@drawable/caret_down"
+            android:drawablePadding="6dp"
+            android:text="0.987%"
+            android:textColor="#ff1111"
+            android:textSize="@dimen/width_15_sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/l2"
+        android:layout_marginEnd="@dimen/width_15"
+        android:layout_marginRight="@dimen/width_15"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEEK"
+            android:textSize="@dimen/width_15_sp" />
+
+        <com.github.omadahealth.typefaceview.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/arrowup"
+            android:drawablePadding="6dp"
+            android:text="0.987%"
+            android:textColor="#03A61C"
+            android:textSize="@dimen/width_15_sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

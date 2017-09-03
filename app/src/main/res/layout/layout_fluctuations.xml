@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="50">
+
+        <LinearLayout
+            android:layout_width="@dimen/width_14"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/width_5"
+            android:layout_weight="2"
+            android:background="#0D5080" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="24">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="BTC"
+                    android:textSize="@dimen/width_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar0"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/width_10"
+                    android:layout_marginTop="@dimen/width_17"
+                    android:progressDrawable="@drawable/progress_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="ETH"
+                    android:textColor="#0D5080"
+                    android:textSize="@dimen/width_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/width_10"
+                    android:layout_marginTop="@dimen/width_17"
+                    android:progressDrawable="@drawable/progress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="LTH"
+                    android:textSize="@dimen/width_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/width_10"
+                    android:layout_marginTop="@dimen/width_17"
+                    android:progressDrawable="@drawable/progress_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="STM"
+                    android:textSize="@dimen/width_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/width_10"
+                    android:layout_marginTop="@dimen/width_17"
+                    android:progressDrawable="@drawable/progress_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="DSH"
+                    android:textSize="@dimen/width_16" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/width_10"
+                    android:layout_marginTop="@dimen/width_17"
+                    android:progressDrawable="@drawable/progress_grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:id="@+id/text_ethereum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_15"
+                android:layout_marginTop="@dimen/width_10"
+                android:text="@string/eth_code"
+                android:textSize="@dimen/width_16" />
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/text_ethereum"
+                android:layout_marginRight="@dimen/width_15"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/black"
+                android:orientation="horizontal" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:id="@+id/pointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/divider"
+                android:layout_marginEnd="@dimen/width_15"
+                android:layout_marginRight="@dimen/width_15"
+                android:layout_marginTop="20dp"
+                android:text="@string/amt_int"
+                android:textColor="#0D5080"
+                android:textSize="@dimen/width_30_sp"
+                android:textStyle="bold" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pointer"
+                android:layout_marginEnd="@dimen/width_15"
+                android:layout_marginRight="@dimen/width_15"
+                android:layout_marginTop="5dp"
+                android:text="@string/amt_doller"
+                android:textColor="#585757"
+                android:textSize="@dimen/width_20_sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

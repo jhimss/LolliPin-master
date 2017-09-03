@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.github.orangegangsters.lollipin.lib.views.PinCodeRoundView
+        android:id="@+id/pin_code_round_view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/keyboard_button_ripple_padding" />
+
+
+    <LinearLayout
+        android:id="@+id/pin_code_gray_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/pin_code_keyboard_view"
+        android:background="@color/light_gray_bar"
+        android:orientation="horizontal" />
+
+    <com.github.orangegangsters.lollipin.lib.views.KeyboardView
+        android:id="@+id/pin_code_keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pin_code_fingerprint_imageview"
+        android:layout_marginBottom="@dimen/activity_pin_code_padding" />
+
+    <ImageView
+        android:id="@+id/pin_code_fingerprint_imageview"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/forwardchevron"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

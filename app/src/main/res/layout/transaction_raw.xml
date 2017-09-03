@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.github.omadahealth.typefaceview.TypefaceTextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="70dp"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:text="28 July 2017  |  8:36 AM " />
+
+    <com.github.omadahealth.typefaceview.TypefaceTextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:textSize="25dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignStart="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="10dp"
+        android:text="0.084316    ETH" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/outgoing"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+</RelativeLayout>

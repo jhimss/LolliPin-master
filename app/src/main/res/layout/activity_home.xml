@@ -1,0 +1,156 @@
+<com.github.orangegangsters.lollipin.lib.views.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="130dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/list"
+    sothree:umanoShadowHeight="5dp">
+
+    <!-- MAIN CONTENT -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="?attr/actionBarSize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <include layout="@layout/layout_fluctuations" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <include layout="@layout/layout_rates" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/srb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+
+            <include
+                android:id="@+id/modiule"
+                layout="@layout/layout_module" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Transaction History"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/pin_code_gray_bar"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/width_70"
+                    android:layout_marginStart="@dimen/width_70"
+                    android:layout_marginTop="5dp"
+                    android:text="28 July 2017  |  8:36 AM "
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/width_17" />
+
+                <com.github.omadahealth.typefaceview.TypefaceTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:text="0.084316    ETH"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/width_25" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_20"
+                    android:layout_marginStart="@dimen/width_20"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:src="@drawable/outgoing" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/width_0">
+
+        </ListView>
+
+    </LinearLayout>
+</com.github.orangegangsters.lollipin.lib.views.SlidingUpPanelLayout>

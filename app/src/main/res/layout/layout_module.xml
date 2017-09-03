@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_pin_code_padding"
+    android:layout_marginRight="@dimen/activity_pin_code_padding"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="30">
+
+        <LinearLayout
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sendicon" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/width_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/receiveicon" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/receive"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/width_17" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/transfericon" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/buy_sell"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/width_17" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
