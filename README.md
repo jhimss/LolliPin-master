@@ -19,8 +19,8 @@ Linux Kernal, Frameworks, Libraries
 
 ## Learning
 
-1: Apps that has custom keyboard
-2: Apps that has Rounded pin code
-3: Apps that keep users to check coversion of currency
-4: Apps that support QR code and barcode scanner with camera
-5: Apps that has sliding layout from bottom to top
+- Apps that has custom keyboard
+- Apps that has Rounded pin code
+- Apps that keep users to check coversion of currency
+- Apps that support QR code and barcode scanner with camera
+- Apps that has sliding layout from bottom to top
