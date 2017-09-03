@@ -11,10 +11,11 @@ Linux Kernal, Frameworks, Libraries
 ## Key-Things
 
 ### Apps consist of four screens which are as follow:
-1: EnterPin Screen : User have to enter the pin to enter the app
-2: HomeScreen: Consist of ETHEREUM balance, Transaction history and three button which are Send, Receive, Buy/Sell
-3: ReceiveScreen: Consist of ETHEREUM QR Code scanner and getting the result and printing on field and also a feature to copy the result
-4: SendScreen: Consist of converting currency amount i.e, ETH to USD coversion
+
+- EnterPin Screen : User have to enter the pin to enter the app.
+- HomeScreen: Consist of ETHEREUM balance, Transaction history and three button which are Send, Receive, Buy/Sell
+- ReceiveScreen: Consist of ETHEREUM QR Code scanner and getting the result and printing on field and also a feature to copy the result
+- SendScreen: Consist of converting currency amount i.e, ETH to USD coversion
 
 ## Learning
 
